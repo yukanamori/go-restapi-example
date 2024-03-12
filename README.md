@@ -1,1 +1,3 @@
 # go-restapi-example
+
+[alpha](https://github.com/yukanamori/go-restapi-example/tree/alpha)ブランチにて作成中...
