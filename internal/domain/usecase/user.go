@@ -123,6 +123,7 @@ func (u *UserUsecaseImpl) UpdatePassword(username, password string) error {
 	hashedPassword, err := auth.HashPassword(password)
 	if err != nil {
 		zap.L().Error("failed to hash password", zap.Error(err), zap.String("username", username))
+		return err
 	}
 
 	user.Password = hashedPassword

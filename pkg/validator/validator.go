@@ -13,7 +13,6 @@ type Validator struct {
 func New() *Validator {
 	validator := validator.New()
 	validator.RegisterValidation("rfc3339", RFC3339Validation)
-	validator.RegisterValidation("rfc3339milli", RFC3339MilliValidation)
 	validator.RegisterValidation("password", PasswordValidation)
 	return &Validator{validator}
 }
